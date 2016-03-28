@@ -1,9 +1,9 @@
 <h1>comments</h1>
 
-{{view "nav"}}
+{{nav}}
 {{#each model as |item|}}
   {{#link-to "index"}}{{item.name}}{{/link-to}}
-  {{view "summary"}}
+  {{summary}}
 {{/each}}
 
 {{outlet}}
